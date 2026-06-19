@@ -26,7 +26,7 @@ const RegisterDoctor = () => {
 
 
         try{
-            const response = await axios.post('http://localhost:5000/api/doctors/register', formData);
+            const response = await axios.post(`${import.meta.env.VITE_API_URL}/doctors/register`, formData);
 
             Swal.fire({
                 icon: 'success',

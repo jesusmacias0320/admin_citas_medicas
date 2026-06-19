@@ -29,7 +29,7 @@ const AssignSchedule = () => {
     useEffect(() => {
         const fetchMedicos = async () => {
             try{
-                const response = await axios.get('http://localhost:5000/api/doctors/lista');
+                const response = await axios.get(`${import.meta.env.VITE_API_URL}/doctors/lista`);
                 setMedicos(response.data);
             }catch(error){
                 console.error("Error al cargar médicos",error);
@@ -58,7 +58,7 @@ const AssignSchedule = () => {
         };
 
         try{
-            const response = await axios.post('http://localhost:5000/api/schedules/add', payload);
+            const response = await axios.post(`${import.meta.env.VITE_API_URL}/schedules/add`, payload);
 
             Swal.fire({
                 icon: 'success',
