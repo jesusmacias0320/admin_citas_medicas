@@ -1,0 +1,36 @@
+.schedule-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.schedule-container h2 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.schedule-container p {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+}
+
+.time-group {
+    display: flex;
+    gap: 20px;
+}
+
+.time-group .form-group {
+    flex: 1;
+}
+
+select.form-input {
+    background-color: white;
+    cursor: pointer;
+}
